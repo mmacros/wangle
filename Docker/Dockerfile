@@ -70,3 +70,5 @@ RUN git clone https://github.com/facebook/wangle && \
     make -j $(nproc) && \
     make install && \
     cd ../..
+    
+ENTRYPOINT ["/bin/bash"]
