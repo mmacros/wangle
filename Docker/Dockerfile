@@ -1,6 +1,6 @@
 #Pull base image
 FROM ubuntu
-MAINTAINER mmacros@gmail.com
+LABEL maintainer="mmacros@gmail.com"
 #Install libs and dev enviroment
 ENV TZ=America/Argentina/Buenos_Aires
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
@@ -70,5 +70,5 @@ RUN git clone https://github.com/facebook/wangle && \
     make -j $(nproc) && \
     make install && \
     cd ../..
-    
+
 ENTRYPOINT ["/bin/bash"]
