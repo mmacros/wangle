@@ -1,6 +1,5 @@
 // Don't compile
-// g++ -std=c++11 EchoServer.cpp -pthread  -llzma -lz -lsnappy -llz4 -liberty  -ljemalloc -levent -ldouble-conversion -lssl -lgflags -lglog -lboost_system -lfolly  -lwangle -ldl -lstdc++ -lunwind -lsodium -ldwarf -lfizz -fpermissive
-
+// g++ -std=c++14 EchoServer.cpp -o EchoServer -lwangle -lfizz -lfolly -lgflags -lglog -lpthread -ldl -lboost_context -lboost_program_options -lboost_thread -lboost_filesystem -lboost_system -lboost_regex -lboost_chrono -lssl -lcrypto -llzma -lz -lsnappy -llz4 -liberty -levent -ldouble-conversion -lsodium -lunwind
 /*
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
