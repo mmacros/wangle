@@ -71,6 +71,6 @@ RUN git clone https://github.com/facebook/wangle && \
     make install && \
     cd ../..
 CMD ["/bin/bash"]
-WORKDIR  /workdir
-VOLUME ["/workdir"]
+WORKDIR  /prj_src
+VOLUME ["/prj_src"]
 
