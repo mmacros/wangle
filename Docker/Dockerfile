@@ -70,5 +70,7 @@ RUN git clone https://github.com/facebook/wangle && \
     make -j $(nproc) && \
     make install && \
     cd ../..
+CMD ["/bin/bash"]
+WORKDIR  /workdir
+VOLUME ["/workdir"]
 
-ENTRYPOINT ["/bin/bash"]
